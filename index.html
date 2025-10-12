@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEEX - Đóng Gói Thương Hiệu Của Bạn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#f59e0b',
+                        },
+                        secondary: {
+                            500: '#f97316',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            @apply text-gray-900;
+        }
+.hero-pattern {
+            background-image: radial-gradient(circle, rgba(74, 85, 104, 0.2) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+.price-card:hover {
+            transform: translateY(-5px);
+            @apply shadow-xl shadow-amber-900/20;
+        }
+        .hexagon {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+    </style>
+</head>
+<body class="dark" style="background-color: #fff0db;">
+<!-- Navigation -->
+    <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://huggingface.co/spaces/Khoi100108/beex-buzz-packaging-hive/resolve/main/images/552903522_1151454516404675_1463492724842005579_n-removebg-preview.png" alt="BEEX Logo" class="h-10 w-auto">
+                        <span class="text-amber-500">BEEX</span>
+</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#about" class="text-gray-300 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium">Về Chúng Tôi</a>
+                        <a href="#services" class="text-gray-300 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium">Dịch Vụ</a>
+                        <a href="#pricing" class="text-gray-300 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium">Bảng Giá</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium bg-amber-500 text-gray-900 font-bold hover:bg-amber-600">Liên Hệ</a>
+                    </div>
+</div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md hover:bg-gray-700 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section style="background-image: url('https://huggingface.co/spaces/Khoi100108/beex-buzz-packaging-hive/resolve/main/images/Untitled%20design.png'); background-size: cover; background-position: center;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="text-amber-500">Không chỉ in ấn</span>, chúng tôi kể câu chuyện thương hiệu của bạn
+                </h1>
+                <p class="text-xl md:text-2xl text-[#71797E] max-w-3xl mx-auto mb-10">
+                    BEEX - Giải pháp trọn gói cho thiết kế, in ấn và đóng gói bao bì sáng tạo
+                </p>
+<div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Bắt Đầu Ngay
+                    </a>
+                    <a href="#services" class="border border-amber-500 text-amber-500 hover:bg-amber-500/10 font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Khám Phá Dịch Vụ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl text-[#fff0db] md:text-4xl font-bold mb-4">VỀ <span class="text-amber-500">BEEX</span></h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl text-amber-500">Lý do thành lập</h3>
+                    <p class="text-gray-300 mb-6">
+                        BEEX ra đời với mong muốn giúp các thương hiệu xây dựng hình ảnh nhận diện riêng biệt trong thị trường cạnh tranh. Chúng tôi không chỉ in ấn mà còn thiết kế và đóng gói theo yêu cầu.
+                    </p>
+                    <h3 class="text-2xl text-amber-500">Ý nghĩa tên BEEX</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-amber-500/20 p-2 rounded-full">
+                                <i data-feather="box" class="text-amber-500 w-5 h-5"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-gray-300">BOX</h4>
+                                <p class="text-gray-300">Biểu trưng cho những "chiếc hộp" chứa đựng tâm huyết gửi đến khách hàng</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-orange-500/20 p-2 rounded-full">
+                                <i data-feather="layers" class="text-orange-500 w-5 h-5"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-gray-300">THREE</h4>
+                                <p class="text-gray-300">Đại diện cho 3 mảng chính - Thiết kế, In ấn, Đóng gói</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-700 rounded-xl overflow-hidden aspect-w-16 aspect-h-9">
+                        <img src="https://huggingface.co/spaces/Khoi100108/beex-buzz-packaging-hive/resolve/main/images/Copy%20of%20T%E1%BB%95%203%20-%20BEEX,%20In%20%E1%BA%A5n.png" alt="BEEX Team" class="w-full h-full object-cover">
+</div>
+                    <div class="absolute -bottom-6 -left-6 bg-amber-500 w-32 h-32 rounded-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 hovered-element">Dịch Vụ Của <span class="text-amber-500 hovered-element">Chúng Tôi</span></h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
+            </div>
+<div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-amber-500 transition duration-300">
+                    <div class="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="pen-tool" class="text-amber-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl text-[#fff0db] font-bold mb-3">Thiết kế</h3>
+                    <p class="text-gray-300">
+                        Tạo nên những mẫu thiết kế độc đáo, thu hút, thể hiện cá tính thương hiệu. Từ bao bì sản phẩm đến hộp quà, đội ngũ thiết kế của chúng tôi luôn đảm bảo tính thẩm mỹ và thông điệp rõ ràng.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-amber-500 transition duration-300">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="printer" class="text-orange-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl text-[#fff0db] font-bold mb-3">In ấn</h3>
+                    <p class="text-gray-300">
+                        Cung cấp chất lượng in sắc nét, màu sắc sống động, phù hợp cho mọi loại sản phẩm. Chúng tôi sử dụng công nghệ in hiện đại để mang lại sự chuyên nghiệp và uy tín cho thương hiệu của bạn.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-amber-500 transition duration-300">
+                    <div class="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="package" class="text-amber-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl text-[#fff0db] font-bold mb-3">Đóng gói</h3>
+                    <p class="text-gray-300">
+                        Chuyên về bao bì đa dạng chất liệu và dịch vụ đóng gói hộp quà sáng tạo. Giúp sản phẩm của bạn trở nên tinh tế và ấn tượng hơn trong mắt khách hàng.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-800 rounded-xl p-8 border border-gray-700">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-amber-500">Điểm Khác Biệt Của BEEX</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                                <span class="text-gray-300">Giải pháp trọn gói từ A-Z trong một quy trình liền mạch</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                                <span class="text-gray-300">Nhận đơn hàng lẻ với giá cả hợp lý - lý tưởng cho startup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                                <span class="text-gray-300">Đội ngũ thiết kế giàu kinh nghiệm, luôn cập nhật xu hướng</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                                <span class="text-gray-300">Hỗ trợ tư vấn nhiệt tình, thấu hiểu nhu cầu khách hàng</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="relative">
+                            <img src="https://huggingface.co/spaces/Khoi100108/beex-buzz-packaging-hive/resolve/main/images/Copy%20of%20T%E1%BB%95%203%20-%20BEEX,%20In%20%E1%BA%A5n%20(1).png" alt="BEEX Packaging" class="rounded-lg w-full max-w-md border border-gray-700">
+<div class="absolute -top-4 -right-4 bg-orange-500 w-16 h-16 rounded-lg flex items-center justify-center">
+                                <i data-feather="award" class="text-gray-900 w-8 h-8"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl text-[#fff0db] font-bold mb-4">Bảng <span class="text-amber-500">Giá</span></h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto mt-4">
+                    Giá có thể thay đổi theo yêu cầu kỹ thuật, chất liệu và thời gian hoàn thành. Liên hệ để được tư vấn cụ thể.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Design Pricing -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 price-card transition duration-300">
+                    <div class="bg-amber-500 p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Thiết kế</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Sản phẩm</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Đơn giá (VNĐ)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Logo (2-3 concept)</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">700.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Bao bì sản phẩm</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">500.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Namecard (1-2 concept)</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">300.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Poster/Banner A3/A2/A1</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">3.500.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Bộ nhận diện thương hiệu</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">2.500.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Print Pricing -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 price-card transition duration-300">
+                    <div class="bg-amber-500 p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">In ấn</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Sản phẩm</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Đơn giá (VNĐ)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Tờ rơi/Brochure A5/A4/A3</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">3.000/tờ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Namecard</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">2.000/chiếc</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Hộp giấy</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">1.000-4.000/hộp</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Túi giấy</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">900-3.000/túi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Sticker</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">500/chiếc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Packaging Pricing -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 price-card transition duration-300">
+                    <div class="bg-amber-500 p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900">Đóng gói</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-700">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Cách đóng gói</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Đơn giá (VNĐ)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Đơn giản</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">2.000/sản phẩm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Quà tặng</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">10.000/sản phẩm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-sm text-gray-300">Tem bảo hành/chống giả</td>
+                                        <td class="px-4 py-3 text-sm font-medium text-amber-500">800/sản phẩm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gray-900 rounded-xl p-8 border border-amber-500/50">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4 text-amber-500">Ưu Đãi Đặc Biệt</h3>
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                            <div class="text-4xl font-bold text-amber-500 mb-2">10%</div>
+                            <p class="text-gray-300">Giảm tổng tiền cho đơn đầu tiên</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                            <div class="text-4xl font-bold text-amber-500 mb-2">10%</div>
+                            <p class="text-gray-300">Giảm khi sử dụng cả 3 dịch vụ</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                            <div class="text-4xl font-bold text-amber-500 mb-2">Freeship</div>
+                            <p class="text-gray-300">Nội thành & 3 đơn đầu tiên</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20"; background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Liên Hệ <span class="text-amber-500">BEEX</span></h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class=" max-w-2xl mx-auto mt-4">
+                    Để được tư vấn và báo giá chi tiết, vui lòng liên hệ với chúng tôi
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                        <h3 class="text-xl text-[#fff0db] font-bold mb-6">Thông Tin Liên Hệ</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-amber-500/20 p-2 rounded-full">
+                                    <i data-feather="map-pin" class="text-amber-500 w-5 h-5"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-[#fff0db] font-bold">Địa chỉ</h4>
+                                    <p class="text-gray-300">632A Đường Trường Sa, Phường Phú Nhuận, TP.HCM</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-orange-500/20 p-2 rounded-full">
+                                    <i data-feather="phone" class="text-orange-500 w-5 h-5"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-[#fff0db] font-bold">Điện thoại</h4>
+                                    <p class="text-gray-300">0909 123 456</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-amber-500/20 p-2 rounded-full">
+                                    <i data-feather="mail" class="text-amber-500 w-5 h-5"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-[#fff0db] font-bold">Email</h4>
+                                    <p class="text-gray-300">contact@beex.vn</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-orange-500/20 p-2 rounded-full">
+                                    <i data-feather="clock" class="text-orange-500 w-5 h-5"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h4 class="text-[#fff0db] font-bold">Giờ làm việc</h4>
+                                    <p class="text-gray-300">Thứ 2 - Thứ 7: 8:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-xl text-[#fff0db] font-bold mb-4">Kết nối với chúng tôi</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 text-[#fff0db] h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                                    <i data-feather="facebook" class="w-5 h-5"></i>
+                                </a>
+                                <a href="#" class="w-10 text-[#fff0db] h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                                    <i data-feather="instagram" class="w-5 h-5"></i>
+                                </a>
+                                <a href="#" class="w-10 text-[#fff0db] h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                                    <i data-feather="youtube" class="w-5 h-5"></i>
+                                </a>
+                                <a href="#" class="w-10 text-[#fff0db] h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                                    <i data-feather="zap" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-gray-800 rounded-xl p-8 border border-gray-700">
+                        <div class="text-center">
+                            <h3 class="text-xl text-[#fff0db] font-bold ">Cảm ơn bạn đã tin tưởng và lựa chọn BEEX</h3>
+                        </div>
+                    </div>
+</div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl text-[#fff0db] font-bold mb-6">Gửi Yêu Cầu</h3>
+                    <form>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Họ và tên</label>
+                                <input type="text" id="name" class="w-full text-gray-300 mb-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full text-gray-300 mb-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Điện thoại</label>
+                                <input type="tel" id="phone" class="w-full text-gray-300 mb-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Dịch vụ quan tâm</label>
+                                <select id="service" class="w-full text-gray-300 mb-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                                    <option>Thiết kế</option>
+                                    <option>In ấn</option>
+                                    <option>Đóng gói</option>
+                                    <option>Cả 3 dịch vụ</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Nội dung yêu cầu</label>
+                                <textarea id="message" rows="4" class="w-full text-gray-300 mb-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300">
+                                    Gửi Yêu Cầu
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center">
+                        <img src="https://huggingface.co/spaces/Khoi100108/beex-buzz-packaging-hive/resolve/main/images/552903522_1151454516404675_1463492724842005579_n-removebg-preview.png" alt="BEEX Logo" class="h-8 w-auto">
+                        <span class="ml-2 text-amber-500 text-lg font-bold">BEEX</span>
+</div>
+                    <p class="text-gray-300 mt-4">
+                        Không chỉ in ấn, chúng tôi kể câu chuyện thương hiệu của bạn bằng cả tâm huyết.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Dịch Vụ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Thiết Kế</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">In Ấn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Đóng Gói</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Combo Trọn Gói</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Liên Kết</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Về Chúng Tôi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Bảng Giá</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Ưu Đãi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Đăng Ký Nhận Tin</h3>
+                    <p class="text-gray-400 mb-4">
+                        Nhận thông tin ưu đãi và cập nhật mới nhất từ BEEX
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email của bạn" class="bg-gray-700 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-amber-500 w-full">
+                        <button type="submit" class="bg-amber-500 text-gray-900 px-4 py-2 rounded-r-lg hover:bg-amber-600 transition duration-300">
+                            <i data-feather="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 BEEX. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300 text-sm">Điều Khoản</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300 text-sm">Bảo Mật</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300 text-sm">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-amber-600 transition duration-300 hidden">
+        <i data-feather="arrow-up" class="text-gray-900 w-5 h-5"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden hidden bg-gray-800 border-t border-gray-700 fixed inset-x-0 bottom-0 z-40';
+        mobileMenu.innerHTML = `
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-amber-500">Về Chúng Tôi</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-amber-500">Dịch Vụ</a>
+                <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-amber-500">Bảng Giá</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-amber-500 text-gray-900 font-bold hover:bg-amber-600">Liên Hệ</a>
+            </div>
+`;
+        document.body.appendChild(mobileMenu);
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
